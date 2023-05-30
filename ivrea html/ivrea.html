@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Città di Ivrea - Museo della Olivetti</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css2?family=Pacifico&display=swap" rel="stylesheet">
+  <script src="script.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/2.10.2/umd/popper.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</head>
+<body>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz" crossorigin="anonymous"></script>
+
+  <button class="homeBtn" onclick="scrollToSection('section-home')">Home</button>
+  <header>
+    <section id="section-home">
+      <h1 class="animated rollIn" id="titolo">Città di Ivrea</h1>
+        <h2 class="animated zoomIn"> 
+          Questo sito web vi porterà alla scoperta della città di Ivrea, situata nella regione del piemonte.
+          <br>Ivrea è famosa per essere stata la città di nascita di Camillo Olivetti, fondatore dell'omonima azienda di macchine da scrivere e successivamente di computers
+          <br>Tuttavia, la città possiede anche una storia e una cultura affascinanti, con eventi tipici come la battaglia delle arance, il tutto contornato da paesaggi incantevoli
+          <br>In questa pagina troverete tutto questo e altro, vi auguriamo una buona lettutra!
+        </h2>
+      <br><div class="hamburger" onclick="toggleMenu()" id="humburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <ul class="menu" id="menu">
+        <a style="color:#fff" href="#section-home" >Home</a>
+        <br><a style="color:#fff" href="#section-citta">La città</a>
+        <br><a style="color:#fff" href="#section-evento">Un evento insolito</a>
+        <br><a style="color:#fff" href="#section-museo">Il museo</a>
+      </ul>
+   </section>
+  </header>
+
+<!--CITTA'-->
+  <div>
+     <section id = section-citta>
+        <h1 class="titoli">
+          La Città
+        </h1>
+          <h2 class = "paragrafi">
+              <br>Come detto in precedenza, la città di Ivrea è molto rinomata per essere stata la sede dell'azienda Olivetti (prima foto), ma gli scorci che offre sono numerosi!
+              <br>Per esempio, il paesaggio nel quale è immersa è molto suggestivo, grazie anche al fiume della Dora Baltea, un affluente del Po (seconda foto)
+              <br>Inoltre, in quanto città dotata di una lunga storia, non mancano di certo castelli e antiche costruzioni risalenti all'epoca di dominazione della famiglia dei savoia (terza foto)
+            <div class="card-group" style="padding: 2vw;">
+              <div class="card">
+                <img src="img/fabbricaOlivetti.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #fff;">La fabbrica di vetro</h5>
+                  <p class="card-text" style="color: #fff;">In foto è mostrato l'edificio commissionato da Adriano Olivetti negli anni 30 anche chiamato "fabbrica di vetro"
+                    Questo complesso si affaccia lungo via Jervis, la strada principale di ivrea, e al suo tempo era considerato una grande rivoluzione rispetto alle fabbriche tradizionali
+                  </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/fiume1.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #fff;">La Dora Baltea</h5>
+                  <p class="card-text" style="color: #fff;">Il fiume che si snoda attraverso la città di Ivrea. La foto è stata scattata da un parco che si affaccia proprio su di esso </p>
+                </div>
+              </div>
+              <div class="card">
+                <img src="img/castello.jpg" class="card-img-top" alt="...">
+                <div class="card-body">
+                  <h5 class="card-title" style="color: #fff;">Il castello dalle rosse torri</h5>
+                <p class="card-text" style="color: #fff;">Chiamato così per il chiaro colore delle 4 torri che lo circondano, questo castello svetta dalla collina di Santa Maria e domina il centro storico. Fu fatto costruire per volere di  Amedeo VI di Savoia nel 1358 e impiegò quasi 40anni!</p>
+                </div>
+              </div>
+            </div>
+          </h2>
+    </section>
+  </div>
+<!--BATTAGLIA DELLE ARANCE-->
+  <div>
+    <section id="section-evento">
+      <h1 class="titoli" style="padding: 3vw;">
+        Un evento insolito a ivrea
+      </h1>
+        <h2 class="paragrafi">
+          La città di Ivrea può vantare una tradizione più che centenaria che sicuramente pochissime città al mondo possiedono.
+          <br>Stiamo parlando della battaglia delle arance, un evento che si svolge ogni anno durante il periodo di carnevale e che 
+          <br>attira turisti da tutto il mondo oltre che Italiani e cittadini stessi che vi partecipano attivamente.
+          <br>Ma di cosa si tratta? 
+          <div id="carouselExampleIndicators" class="carousel slide" style="text-align: justify;">
+            <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+              <div class="carousel-inner">
+                <div class="carousel-item active" id="aranceCarousel">
+                  <img src="img/arance1.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item"id="aranceCarousel">
+                  <img src="img/arance2.jpg" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item"id="aranceCarousel">
+                  <img src="img/arance3.jpg" class="d-block w-100" alt="...">
+                </div>
+              </div>
+            </div>
+            <div class="card" id="cardEventi" style="background-color: #1d1d1d;">
+              <div class="card-content">
+                <p class="card-text" style="color: #fff;">
+                  Questo evento più che unico, come detto, si svolge durante il periodo del carnevale e la leggenda narra che il tutto sia nato nel 1808, 
+                  quando un nobiluomo tentò di ribellarsi contro l'oppressione feudale dell'epoca; tuttavia, l'uomo rimase ucciso e da questo episodio 
+                  molte persone del luogo guidarono numerose rivolte fino a sconfiggere il feudatario tiranno. In queste rivolte, venivano appunto tirate delle arance che simboleggiassero le teste dei soldati nemici.
+                  <br>Durante il carnevale, quindi, la popolazione si divide in "aranceri a piedi", che tirano arance contro le truppe del tiranno, 
+                  e "aranceri a cavallo", che rappresentano i nobili e cavalcano carri decorati lanciando arance sulla folla
+              </p>
+              </div>
+            </div>
+        </h2>
+    </section>
+  </div>
+<!--MUSEO-->
+  <div>
+    <section id="section-museo">
+      <h1 class="titoli" style="padding: 2vw;">
+        Il museo della Olivetti
+      </h1>
+        <h2 class="paragrafi" style="background-image: linear-gradient(#1d1d1d, #1d1d1d, transparent); height: 10vw;">
+          Ivrea, oltre che essere una città caratterizzata da eventi tipici e paesaggi suggestivi, è molto rinomata per essere stata la sede di una delle più 
+          <br>importanti aziende nella storia italiana: stiamo parlando della Olivetti che, fondata del 1908 da Camillo Olivetti, si è fatta portatrice di numerose 
+          <br>innovazioni nel corso della storia, passando dal produrre macchine da scrivere ai primi computers e diventando da subito un'icona di design  
+          <br>Di seguito, troviamo alcune delle tante macchine esposte nel museo
+        </h2>
+        <h2>
+          <div class="card" style="width: 18rem; position: absolute; left: 5vw;">
+            <img src="img/m1.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">La prima macchina</h5>
+              <p class="card-text" style="color: #fff;">Nella foto è mostrata la Olivetti M1, la primissima macchina da scrivere prodotta dall'azienda. Come le altre, si può trovare esposta al museo di Ivrea</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; left: 42vw; top: 140vw">
+            <img src="img/calcolatrice.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Prime calcolatrici</h5>
+              <p class="card-text" style="color: #fff;">Oltre alle macchine da scrivere, Olivetti si cimentò presto anche nella prduzione di calcolatrici. Quella in foto, del tutto meccanica, risale al 1923</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; right: 5vw;">
+            <img src="img/calcolatrice2.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Evoluzioni</h5>
+              <p class="card-text" style="color: #fff;">Le calcolatrici meccaniche come le macchine da scrivere hanno subito una grande evoluzione negli anni: in foto è mostrata la Summa Prima, uscita nel 1960</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; left: 24vw; top: 155vw;">
+            <img src="img/lexikon80.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Design futuristici</h5>
+              <p class="card-text" style="color: #fff;">Sin dalle prime macchine, si nota come Olivetti abbia sempre dato importanza al design dei propri prodotti. Negli anni 80 i design erano di questo tipo</p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; right: 23vw; top: 155vw;">
+            <img src="img/programma101.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Primo calcolatore</h5>
+              <p class="card-text" style="color: #fff;">Il programma 101 è un calcolatore da tavolo programmabile ed è considerato da molti il primo computer della storia.
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; left: 42vw; top: 170vw;">
+            <img src="img/m20.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Primo PC</h5>
+              <p class="card-text" style="color: #fff;">In foto è mostrato l'olivetti M20, considerato il primo personal computer mai prodotto dall'azienda. L'idea dietro esso era di fare concorrenza alla IBM, altra azienda molto in voga all'epoca 
+              </p>
+            </div>
+          </div>
+          <div class="card" style="width: 18rem; position: absolute; left: 5vw; top: 187vw; opacity: 0.9;">
+            <div class="card-body">
+              <h5 class="card-title" style="color: #fff;">Collegamenti</h5>
+              <p class="card-text" style="color: #fff;">Vi ringrazio per essere arrivati fin qui, spero la lettura sia stata di vostro gradimento. Di seguito ci sono alcuni link dove potrete seguirmi :D</p>
+              <a href="https://www.instagram.com/lrsgzz/" class="card-link"z>Instagram</a>
+              <a href="https://github.com/loris2659y2" class="card-link">GitHub</a>
+            </div>
+          </div>
+        </h2>
+    </section>
+  </div>
+</body>
+</html>

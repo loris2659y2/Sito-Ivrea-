@@ -1,0 +1,139 @@
+html{scroll-behavior:smooth}
+
+.homeBtn{
+  font-family: 'Pacifico', cursive;
+  position: fixed;
+  left: 3%;
+  top: 5%;
+  font-size: x-large;
+  opacity: 0.5;
+  z-index: 9999;
+}
+
+/* Stili per l'intestazione */
+header {
+  height: 30vw;
+  background-image: linear-gradient(#1d1d1d, transparent,#1d1d1d );
+  opacity: 1;
+  background-position: center;
+  background-size: cover;
+  padding: 2vw;
+  text-align: center;
+}
+
+/* Stili per il corpo della pagina */
+body {
+  scroll-behavior: smooth;
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: transparent;
+  background-image: url(img/ivreaSfondo.jpg);
+  background-position: center;
+  background-size:cover;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+}
+
+h1 {
+  font-family: 'Pacifico', cursive;
+  color: #fff;
+  text-align: center;
+  font-size: 3vw;
+}
+
+ul{
+  background-color: transparent;
+  font-family: 'Pacifico', cursive;
+  font-size: xx-large;
+  position: absolute;
+  top: 16vw;
+  left: 41.2vw;
+}
+
+h2 {
+  text-align: center;
+  color: #fff;
+  font-family: 'Garamond', cursive;
+  font-size: 1.2vw;
+  margin: 0;
+  animation-delay: 1000ms;
+}
+
+.titoli{
+  margin: 0;
+  text-align: center;
+  background-color: #1d1d1d;
+}
+
+.paragrafi{
+  margin: 0;
+  background-image: linear-gradient(#1d1d1d, transparent, #1d1d1d);
+  font-size: 1.2vw;
+}
+
+.card{
+  transition: transform 0.3s;
+}
+
+.card:hover{
+  transform: scale(1.1); /* Ingrossa la card del 10% */
+  z-index: 9998;
+}
+
+.card-title{
+  font-size: x-large;
+  font-family: 'Pacifico', cursive;
+}
+
+.carousel-item{
+  margin-top: 2.5vw;
+  margin-left: 3vw;
+  height: 30vw;
+  width: 30vw; /* Imposta la larghezza desiderata dell'immagine*/
+}
+
+.card{
+  margin-top: 2vw;
+  background-color: #1d1d1d;
+}
+
+#cardEventi{
+    text-align: center;
+    width: 50vw; /* Imposta la larghezza desiderata */
+    height: auto; /* Imposta l'altezza automaticamente in base al contenuto */
+    border: 0.5vw solid #fc7f03;
+    border-radius: 1vw;
+    padding: 1.5vw;
+    position: absolute;
+    right: 3vw;
+    top: 1.5vw;
+}*
+
+/* Stili per i paragrafi */
+p {
+  line-height: 1.5;
+}
+
+/* Stili per il menu */
+.menu {
+  display: none; /*Nascondi il menu inizialmente */
+  transition: height 0.3s ease-in-out; /* Aggiungi animazione alla transizione */
+}
+
+/* Stili per l'icona dell'hamburger */
+.hamburger {
+  background-color: transparent;
+  display: inline-block;
+  cursor: pointer;
+}
+
+/* Stili per le linee dell'hamburger */
+.hamburger span {
+  display: block;
+  width: 40px;
+  height: 5px;
+  margin-bottom: 5px;
+  background-color:#fff;
+  transition: background-color 0.3s ease-in-out;
+}
